@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Recipe - RecipeHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"> RecipeHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="add-recipe.html">Add Recipe</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-page">
+    <h1>Add a New Recipe</h1>
+
+    <form id="addRecipeForm">
+      <div class="form-group">
+        <label for="title">Recipe Title</label>
+        <input type="text" id="title" placeholder="e.g. Vegetable Momo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Select a category</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="dessert">Dessert</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label for="ingredients">Ingredients (one per line)</label>
+        <textarea id="ingredients" rows="5" placeholder="2 cups flour&#10;1 tsp salt&#10;..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="steps">Steps (one per line)</label>
+        <textarea id="steps" rows="5" placeholder="Mix the flour and salt&#10;Knead the dough&#10;..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Save Recipe</button>
+    </form>
+  </div>
+
+  <script src="add-recipe.js"></script>
+</body>
+</html>
